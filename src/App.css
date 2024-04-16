@@ -1,0 +1,289 @@
+
+
+.home h1 span {
+    display: inline-block;
+    transition: top 1s
+}
+
+.home h1 {
+    font-family: Vina Sans,sans-serif
+}
+
+@keyframes h1-animation {
+    0%,to {
+        top: 0vw
+    }
+
+    50% {
+        top: -1vw
+    }
+}
+
+.home h2 {
+    font-family: Smooch Sans,sans-serif
+}
+
+.home button {
+    font-family: Indie Flower,cursive;
+    background: linear-gradient(-10deg,transparent 23%,red 23%,red 73%,transparent 73%);
+    background-position: 150% 150%;
+    background-size: 200% 250%;
+    background-repeat: no-repeat;
+    border-radius: 15px
+}
+
+.home button:hover {
+    animation: bg-change .4s forwards
+}
+
+.home button:not(:hover) {
+    animation: bg-change-reverse .4s forwards
+}
+
+.home {
+  background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/leapord-bg-74e4866c.jpg);
+    opacity: 0;
+    transition: opacity 1s ease-in-out
+}
+
+.home.changeOpacity:before {
+    opacity: 1
+}
+
+.home h1 span {
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+    position: relative;
+    transition: left .5s,top .5s,transform 6s
+}
+
+.home #h1-text-12 {
+    top: .8vh;
+    font-family: none
+}
+
+.home #missile1,#missile2,#missile3,#missile4,#missile5 {
+    position: absolute;
+    z-index: -1
+}
+
+@keyframes missile-launch2 {
+    0% {
+        top: -7.5vh;
+        left: 8vw;
+        transform: rotate(45deg)
+    }
+
+    10% {
+        top: -7.5vh;
+        left: 23vw;
+        transform: rotate(-40deg)
+    }
+
+    20% {
+        top: -15vh;
+        left: 25vw;
+        transform: rotate(-45deg)
+    }
+
+    30% {
+        top: -30vh;
+        left: 25vw;
+        transform: rotate(-50deg)
+    }
+
+    75% {
+        top: -48vh;
+        left: 25vw;
+        transform: rotate(-170deg)
+    }
+
+    80% {
+        top: -43vh;
+        left: 15vw;
+        transform: rotate(-170deg)
+    }
+
+    85% {
+        top: -40vh;
+        left: 10vw;
+        transform: rotate(-170deg)
+    }
+
+    90% {
+        top: -37vh;
+        left: 5vw;
+        transform: rotate(-170deg)
+    }
+
+    to {
+        top: -33vh;
+        left: -2vw;
+        transform: rotate(-170deg)
+    }
+}
+
+@keyframes missile-launch1 {
+    0% {
+        top: -7.5vh;
+        left: 8vw;
+        transform: rotate(50deg)
+    }
+
+    10% {
+        top: -7.5vh;
+        left: 15vw;
+        transform: rotate(80deg)
+    }
+
+    20% {
+        top: 0vh;
+        left: 20vw;
+        transform: rotate(120deg)
+    }
+
+    30% {
+        top: 10vh;
+        left: 20vw;
+        transform: rotate(150deg)
+    }
+
+    40% {
+        top: 20vh;
+        left: 15vw;
+        transform: rotate(190deg)
+    }
+
+    55% {
+        top: 20vh;
+        left: 8vw;
+        transform: rotate(250deg)
+    }
+
+    70% {
+        top: 15vh;
+        left: 1vw;
+        transform: rotate(300deg)
+    }
+
+    80% {
+        top: -5vh;
+        left: -1vw;
+        transform: rotate(315deg)
+    }
+
+    to {
+        top: -25vh;
+        left: -2vw;
+        transform: rotate(315deg)
+    }
+}
+
+@keyframes missile-launch3 {
+    0% {
+        top: -7.5vh;
+        left: 8vw;
+        transform: rotate(45deg)
+    }
+
+    25% {
+        top: -7.5vh;
+        left: 60vw;
+        transform: rotate(0)
+    }
+
+    40% {
+        top: -10vh;
+        left: 70vw;
+        transform: rotate(-65deg)
+    }
+
+    50% {
+        top: -30vh;
+        left: 70vw;
+        transform: rotate(-125deg)
+    }
+
+    55% {
+        top: -32vh;
+        left: 70vw;
+        transform: rotate(-135deg)
+    }
+
+    to {
+        top: -32vh;
+        left: -2vw;
+        transform: rotate(-135deg)
+    }
+}
+
+@keyframes missile-launch4 {
+    0% {
+        top: -7.5vh;
+        left: 4vw;
+        transform: rotate(75deg)
+    }
+
+    25% {
+        top: 15.5vh;
+        left: 30vw;
+        transform: rotate(75deg)
+    }
+
+    30% {
+        top: 13vh;
+        left: 33vw;
+        transform: rotate(-20deg)
+    }
+
+    40% {
+        top: 8vh;
+        left: 36vw;
+        transform: rotate(-20deg)
+    }
+
+    70% {
+        top: 0vh;
+        left: 36vw;
+        transform: rotate(-105deg)
+    }
+
+    to {
+        top: -27vh;
+        left: 0vw;
+        transform: rotate(-105deg)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
